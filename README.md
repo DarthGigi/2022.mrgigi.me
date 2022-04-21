@@ -6,12 +6,12 @@
 
 </p>
 
-## 📑 Table of Contentss
+## 📑 Table of Contents
 
 -   [👋 Intro](https://github.com/DarthGigi/mrgigi.me/#-a-personal-portfolio-website)
 -   [⚙️ Made With](https://github.com/DarthGigi/mrgigi.me/#-hand-crafted-with)
 -   [🖇 Links](https://github.com/DarthGigi/mrgigi.me/#-links)
-    -   [🔗 Tools Used](https://github.com/DarthGigi/mrgigi.me/#-tools-used)
+    -   [🔗 Tools Used](https://github.com/DarthGigi/mrgigi.me/#%EF%B8%8F-tools-used)
     -   [🔗 Contact](https://github.com/DarthGigi/mrgigi.me/#-contact)
 -   [🗣 Feedback](https://github.com/DarthGigi/mrgigi.me/#-feedback)
 -   [📄 License](https://github.com/DarthGigi/mrgigi.me/#-license)
