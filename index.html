@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html id="parent" class="dark" lang="en">
+  <head>
+    <!-- Default meta tags -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Linking of external files like css and js -->
+    <link rel="stylesheet" href="./assets/css/master.css" />
+    <script src="./assets/scripts/important.js" importance="high"></script>
+    <script src="./assets/scripts/javascript.js" defer></script>
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/favicons/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicons/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicons/favicon-16x16.png" />
+    <link rel="manifest" href="/assets/images/favicons/site.webmanifest" />
+    <link rel="mask-icon" href="/assets/images/favicons/safari-pinned-tab.svg" color="#5bbad5" />
+    <link rel="shortcut icon" href="/assets/images/favicons/favicon.ico" />
+    <meta name="msapplication-TileColor" content="#2b5797" />
+    <meta name="msapplication-config" content="/assets/images/favicons/browserconfig.xml" />
+    <meta name="theme-color" content="#e5e7eb" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#111827" media="(prefers-color-scheme: dark)" />
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-RL109SK5BL"></script>
+    <script>
+      /**
+       * The function `gtag()` is called with the arguments `'js', new Date()` and `'config', 'G-RL109SK5BL'`
+       */
+      window.dataLayer = window.dataLayer || []
+
+      function gtag() {
+        dataLayer.push(arguments)
+      }
+      gtag('js', new Date())
+
+      gtag('config', 'G-RL109SK5BL')
+    </script>
+
+    <!-- Primary Meta Tags -->
+    <title>Gigi's Useless Website — A useless website that you don't care about</title>
+    <meta name="title" content="Gigi's Useless Website — A useless website that you don't care about" />
+    <meta name="description" content="This is my personal (portfolio) website. Made with Tailwind CSS. If you are interested, the website is open-sourced on my GitHub repository." />
+    <meta name="author" content="Gigi" />
+    <meta name="robots" content="index, follow" />
+    <meta name="language" content="English" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://mrgigi.me/" />
+    <meta property="og:title" content="Gigi's Useless Website — A useless website that you don't care about" />
+    <meta property="og:description" content="This is my personal (portfolio) website. Made with Tailwind CSS. If you are interested, the website is open-sourced on my GitHub repository." />
+    <meta property="og:image" content="/assets/images/png/Thumbnail.png" />
+    <meta property="og:site_name" content="Gigi's Useless Website" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://mrgigi.me/" />
+    <meta property="twitter:title" content="Gigi's Useless Website — A useless website that you don't care about" />
+    <meta property="twitter:description" content="This is my personal (portfolio) website. Made with Tailwind CSS. If you are interested, the website is open-sourced on my GitHub repository." />
+    <meta property="twitter:image" content="/assets/images/png/Thumbnail.png" />
+    <meta property="twitter:site" content="@iDarthGigi" />
+    <meta property="twitter:creator" content="@iDarthGigi" />
+  </head>
+
+  <body class="bg-gray-200 motion-safe:transition-colors motion-safe:duration-500 motion-safe:ease-linear dark:bg-gray-900">
+    <header id="desktopHeader" class="sticky -top-1 z-10 mx-auto px-4 backdrop-blur-sm motion-safe:transition-all motion-safe:duration-500 motion-safe:ease-in-out lg:px-8">
+      <div id="desktopHeaderDiv" class="mb-4 flex items-center justify-between rounded-lg py-4 px-4 motion-safe:transition-colors motion-safe:duration-500 motion-safe:ease-linear">
+        <!-- logo - start -->
+        <div id="rollImg" class="relative z-10 inline-flex cursor-default items-center gap-2.5 motion-safe:transition-all motion-safe:duration-1000">
+          <picture onmouseenter="rollAnimation()">
+            <source srcset="./assets/images/webp/GigiMac.webp" type="image/webp" />
+            <source srcset="./assets/images/png/GigiMac.png" type="image/png" />
+            <img id="rollImg2" src="./assets/images/png/GigiMac.png" alt="Profile Picture Mac" importance="high" class="drag-none pointer-events-none h-auto w-16 select-none rounded-full" />
+          </picture>
+        </div>
+        <div id="walter" class="absolute z-0 cursor-default items-center gap-2.5 opacity-0 motion-safe:transition-all motion-safe:duration-1000">
+          <picture>
+            <source srcset="https://c.tenor.com/neN_tP5qn4YAAAAM/walter-white-shocked.gif" type="image/gif" />
+            <img importance="low" loading="lazy" id="rollImg2" src="https://c.tenor.com/neN_tP5qn4YAAAAM/walter-white-shocked.gif" alt="Walter White Fallin" class="drag-none pointer-events-none h-16 w-16 transform select-none rounded-md" />
+          </picture>
+        </div>
+        <!-- logo - end -->
+
+        <!-- nav - start -->
+        <nav class="hidden gap-24 lg:flex">
+          <a href="/" class="group rounded-lg p-2 hover:bg-gray-300 motion-safe:transition-all motion-safe:duration-300 motion-safe:ease-linear dark:hover:bg-gray-700 lg:hover:scale-110">
+            <div class="flex flex-col">
+              <p class="flex justify-center text-3xl">&#x1F3E0;</p>
+              <p class="text-base font-semibold text-blue-500 group-hover:text-blue-500 group-active:text-blue-700">Home</p>
+            </div>
+          </a>
+          <a href="/" class="group rounded-lg p-2 hover:bg-gray-300 motion-safe:transition-all motion-safe:duration-300 motion-safe:ease-linear dark:hover:bg-gray-700 lg:hover:scale-110">
+            <div class="flex flex-col">
+              <p class="flex justify-center text-3xl">&#x1F6A7;</p>
+              <p class="text-base font-semibold text-gray-600 group-hover:text-blue-500 group-active:text-blue-700">Soon&#8482;</p>
+            </div>
+          </a>
+          <a href="/" class="group rounded-lg p-2 hover:bg-gray-300 motion-safe:transition-all motion-safe:duration-300 motion-safe:ease-linear dark:hover:bg-gray-700 lg:hover:scale-110">
+            <div class="flex flex-col">
+              <p class="flex justify-center text-3xl">&#x1F6A7;</p>
+              <p class="text-base font-semibold text-gray-600 group-hover:text-blue-500 group-active:text-blue-700">Soon&#8482;</p>
+            </div>
+          </a>
+          <a href="/" class="group rounded-lg p-2 hover:bg-gray-300 motion-safe:transition-all motion-safe:duration-300 motion-safe:ease-linear dark:hover:bg-gray-700 lg:hover:scale-110">
+            <div class="flex flex-col">
+              <p class="flex justify-center text-3xl">&#x1F6A7;</p>
+              <p class="text-base font-semibold text-gray-600 group-hover:text-blue-500 group-active:text-blue-700">Soon&#8482;</p>
+            </div>
+          </a>
+        </nav>
+        <!-- nav - end -->
+
+        <!-- buttons - start -->
+        <button onclick="toggleDarkMode()" id="darkModeToggle" type="button" class="rounded-lg bg-gray-300 p-3 text-sm text-gray-600 hover:bg-gray-400 motion-safe:transition-colors motion-safe:duration-500 motion-safe:ease-linear dark:bg-gray-800 dark:text-gray-400 dark:hover:bg-gray-700"></button>
+
+        <button onclick="mobileNavbar()" type="button" class="inline-flex items-center gap-2 rounded-lg bg-gray-300 p-3 text-sm font-semibold text-gray-600 hover:bg-gray-400 focus-visible:ring active:bg-blue-700 motion-safe:transition-colors motion-safe:duration-500 motion-safe:ease-linear dark:bg-gray-800 dark:text-gray-400 dark:hover:bg-gray-700 lg:hidden lg:text-base">
+          <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+    </header>
+    <header id="mobileHeader" class="sticky -top-1 z-10 mx-auto hidden px-4 backdrop-blur-sm motion-safe:transition-all motion-safe:duration-500 motion-safe:ease-in-out lg:hidden">
+      <div id="mobileHeaderDiv" class="flex max-w-screen-lg flex-1 items-center rounded-lg motion-safe:transition-colors motion-safe:duration-500 motion-safe:ease-linear">
+        <!-- nav - start -->
+        <nav class="flex flex-grow px-4">
+          <a href="/" class="group m-auto rounded-lg p-2 px-4 hover:bg-gray-300 motion-safe:transition-all motion-safe:duration-300 motion-safe:ease-linear dark:hover:bg-gray-700 lg:hover:scale-110">
+            <div class="flex flex-col">
+              <p class="flex justify-center text-3xl">&#x1F3E0;</p>
+              <p class="text-base font-semibold text-blue-500 group-hover:text-blue-500 group-active:text-blue-700">Home</p>
+            </div>
+          </a>
+          <a href="/" class="group m-auto rounded-lg p-2 px-4 hover:bg-gray-300 motion-safe:transition-all motion-safe:duration-300 motion-safe:ease-linear dark:hover:bg-gray-700 lg:hover:scale-110">
+            <div class="flex flex-col">
+              <p class="flex justify-center text-3xl">&#x1F6A7;</p>
+              <p class="text-base font-semibold text-gray-600 group-hover:text-blue-500 group-active:text-blue-700">Soon&#8482;</p>
+            </div>
+          </a>
+          <a href="/" class="group m-auto rounded-lg p-2 px-4 hover:bg-gray-300 motion-safe:transition-all motion-safe:duration-300 motion-safe:ease-linear dark:hover:bg-gray-700 lg:hover:scale-110">
+            <div class="flex flex-col">
+              <p class="flex justify-center text-3xl">&#x1F6A7;</p>
+              <p class="text-base font-semibold text-gray-600 group-hover:text-blue-500 group-active:text-blue-700">Soon&#8482;</p>
+            </div>
+          </a>
+          <a href="/" class="group m-auto rounded-lg p-2 px-4 hover:bg-gray-300 motion-safe:transition-all motion-safe:duration-300 motion-safe:ease-linear dark:hover:bg-gray-700 lg:hover:scale-110">
+            <div class="flex flex-col">
+              <p class="flex justify-center text-3xl">&#x1F6A7;</p>
+              <p class="text-base font-semibold text-gray-600 group-hover:text-blue-500 group-active:text-blue-700">Soon&#8482;</p>
+            </div>
+          </a>
+        </nav>
+      </div>
+    </header>
+
+    <section id="section1" class="body-font z-0 h-screen text-gray-600 motion-safe:transition-colors motion-safe:duration-500 motion-safe:ease-linear dark:text-gray-400">
+      <div class="container mx-auto flex flex-col items-center px-5 py-24 lg:flex-row">
+        <div class="mb-10 w-5/6 md:w-1/2 lg:mb-0 xl:w-full xl:max-w-xl">
+          <picture>
+            <source srcset="./assets/images/webp/Gigi3.webp" type="image/webp" />
+            <source srcset="./assets/images/png/Gigi3.png" type="image/png" />
+            <img importance="high" class="drag-none pointer-events-none select-none rounded-2xl object-cover object-center" alt="Gigi Hello Memoji" src="./assets/images/png/Gigi3.png" />
+          </picture>
+        </div>
+        <div class="flex flex-col items-center text-center md:pl-16 lg:w-1/2 lg:flex-grow lg:items-start lg:pl-24 lg:text-left">
+          <h1 class="title-font mb-4 text-3xl font-medium text-gray-900 motion-safe:transition-colors motion-safe:duration-500 motion-safe:ease-linear dark:text-white sm:text-4xl">About Me</h1>
+          <p class="mb-8 leading-relaxed"><span class="inline-block origin-[70%_70%] motion-safe:animate-wiggle">&#x1F44B;</span> Hi! I'm Gigi.<br />I'm a Front-End Developer and a student learning Software Development.</p>
+          <div class="flex justify-center">
+            <button onclick="scrollIntro()" class="inline-flex rounded border-0 bg-blue-500 py-2 px-6 text-lg text-white hover:bg-blue-600 focus:outline-none"><span class="motion- mr-1 inline-block motion-safe:animate-pulse">&#x1F9E0;</span>Learn more about me!</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="intro" class="pb-6 sm:pb-8 lg:pb-12">
+      <div class="mx-auto px-4 lg:px-8">
+        <section class="body-font text-gray-600 motion-safe:transition-colors motion-safe:duration-500 motion-safe:ease-linear dark:text-gray-400">
+          <div class="container mx-auto px-5 py-24">
+            <div class="flex flex-col">
+              <div class="h-1 overflow-hidden rounded bg-gray-300 motion-safe:transition-colors motion-safe:duration-500 motion-safe:ease-linear dark:bg-gray-800">
+                <div class="h-full w-24 bg-blue-500"></div>
+              </div>
+              <div class="mb-12 flex flex-col flex-wrap py-6 sm:flex-row">
+                <h1 class="title-font mb-2 text-2xl font-medium text-gray-900 motion-safe:transition-colors motion-safe:duration-500 motion-safe:ease-linear dark:text-white sm:mb-0 sm:w-2/5">&#x1F60D; What I Love</h1>
+                <p class="pl-0 text-left text-base leading-relaxed sm:w-3/5 sm:pl-10">Here are a few of many things that interest me. I picked my 4 most favorite things to dive in and learn about: Coding, Space, Technology and Design.</p>
+              </div>
+            </div>
+            <div class="-mx-4 -mb-10 -mt-4 flex flex-wrap sm:-m-4">
+              <div class="p-4 lg:w-1/2 xl:w-2/4">
+                <div id="togglePause1" class="h-64 overflow-hidden rounded-lg">
+                  <video id="coding" loop playsinline disablepictureinpicture poster="./assets/images/jpg/coding_thumbnail.jpg" muted class="h-full w-full rounded-lg object-cover object-center active:!pointer-events-none">
+                    <source src="./assets/videos/webm/coding.webm" type="video/webm" />
+                    <source src="./assets/videos/mp4/coding.mp4" type="video/mp4" />
+                    Your browser does not support the video tag.
+                  </video>
+                </div>
+                <h2 class="title-font mt-5 text-xl font-medium text-gray-900 motion-safe:transition-colors motion-safe:duration-500 motion-safe:ease-linear dark:text-white">&#x1F468;&#127995;&#x200D;&#x1F4BB; Coding</h2>
+                <p class="mt-2 text-base leading-relaxed">
+                  I just <span class="italic">love</span> to code. In my free time, I often code something or learn a new thing or two about a programming language. <br class="hidden lg:inline-block" />
+                  I always want to learn more about it since there is so much cool stuff out there.
+                </p>
+              </div>
+              <div class="p-4 lg:w-1/2 xl:w-2/4">
+                <div class="group relative h-64 overflow-hidden rounded-lg">
+                  <div id="togglePause2" class="h-full w-full">
+                    <video id="lettherebelife" loop playsinline disablepictureinpicture poster="./assets/images/jpg/lettherebelife_thumbnail.jpg" muted class="h-full w-full rounded-lg object-cover object-center active:!pointer-events-none">
+                      <source src="./assets/videos/webm/lettherebelife.webm" type="video/webm" />
+                      <source src="./assets/videos/mp4/lettherebelife.mp4" type="video/mp4" />
+                      Your browser does not support the video tag.
+                    </video>
+                  </div>
+                  <button id="toggleMuteSpace" class="motion-safe:transition-color absolute bottom-3 right-3 z-10 opacity-0 delay-500 group-hover:opacity-100 motion-safe:duration-500">
+                    <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z" clip-rule="evenodd"></path>
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2"></path>
+                    </svg>
+                  </button>
+                </div>
+                <h2 class="title-font mt-5 text-xl font-medium text-gray-900 motion-safe:transition-colors motion-safe:duration-500 motion-safe:ease-linear dark:text-white">&#x1F52D; Space</h2>
+                <p class="mt-2 text-base leading-relaxed">
+                  I'm also heavily interested in space science. From black holes to the multi-verse theory, I want to know everything about it! <br class="hidden lg:inline-block" />
+                  I love watching <a href="https://www.youtube.com/channel/UCsXVk37bltHxD1rDPwtNM8Q" target="_blank" class="text-gray-700 underline underline-offset-1 dark:text-gray-500">Kurzgesagt</a> and <a href="https://www.youtube.com/user/melodysheep" target="_blank" class="text-gray-700 underline underline-offset-1 dark:text-gray-500">Melodysheep</a> because they make the most beautiful and informative videos about space.
+                </p>
+              </div>
+              <div class="p-4 lg:w-1/2 xl:w-2/4">
+                <div class="group relative h-64 overflow-hidden rounded-lg">
+                  <div id="togglePause3" class="h-full w-full">
+                    <video id="wonderfultools" loop playsinline disablepictureinpicture poster="./assets/images/jpg/wonderfultools_thumbnail.jpg" muted class="h-full w-full rounded-lg object-cover object-center active:!pointer-events-none">
+                      <source src="./assets/videos/webm/wonderfultools.webm" type="video/webm" />
+                      <source src="./assets/videos/mp4/wonderfultools.mp4" type="video/mp4" />
+                      Your browser does not support the video tag.
+                    </video>
+                  </div>
+                  <button id="toggleMuteTechnology" class="absolute bottom-3 right-3 text-black opacity-0 delay-500 group-hover:opacity-100 motion-safe:transition-opacity motion-safe:duration-500">
+                    <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z" clip-rule="evenodd"></path>
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2"></path>
+                    </svg>
+                  </button>
+                </div>
+                <h2 class="title-font mt-5 text-xl font-medium text-gray-900 motion-safe:transition-colors motion-safe:duration-500 motion-safe:ease-linear dark:text-white">&#x1F4BB; Technology</h2>
+                <p class="mt-2 text-base leading-relaxed">
+                  I also like reading about the latest news in the world of technology. From new cutting-edge advancements to mind-blowing Sci-Fi ideas. <br class="hidden lg:inline-block" />
+                  I'm also a huge &#x1F34F; Apple fan. I like to watch their events and read the latest news about what they have in store for us.
+                </p>
+              </div>
+              <div class="p-4 lg:w-1/2 xl:w-2/4">
+                <div class="overflow-hidden rounded-lg lg:h-64">
+                  <section class="h-full w-full items-center justify-center bg-gray-300 p-8 text-gray-900 motion-safe:transition-colors motion-safe:duration-500 motion-safe:ease-linear dark:bg-gray-800 dark:text-gray-300 lg:flex lg:p-0">
+                    <figure class="h-full lg:flex lg:p-0">
+                      <div class="relative mx-auto h-32 w-32 flex-none rounded-full lg:h-auto lg:w-48 lg:rounded-none lg:rounded-l-xl">
+                        <picture>
+                          <source srcset="./assets/images/webp/stevejobs.webp" type="image/webp" />
+                          <source srcset="/assets/images/jpg/stevejobs.jpg" type="image/jpeg" />
+                          <img importance="low" class="drag-none pointer-events-none relative mx-auto h-full w-full flex-none select-none rounded-full object-cover lg:rounded-none lg:rounded-l-xl" src="./assets/images/jpg/stevejobs.jpg" alt="Steve Jobs Portrait" />
+                        </picture>
+                      </div>
+                      <div class="space-y-4 p-4 text-center lg:p-6 lg:pt-6 lg:text-left">
+                        <blockquote>
+                          <p class="text-lg font-semibold lg:text-xl 2xl:text-2xl">“Design is not just what it looks like and feels like. Design is how it works.”</p>
+                        </blockquote>
+                        <figcaption class="pt-4 font-medium lg:pt-10 2xl:pt-20">
+                          <div class="text-violet-500 motion-safe:transition-colors motion-safe:duration-500 motion-safe:ease-linear dark:text-[#bbb2e9]">Steve Jobs</div>
+                          <div class="text-gray-500 motion-safe:transition-colors motion-safe:duration-500 motion-safe:ease-linear dark:text-gray-400">Former CEO of Apple Inc.</div>
+                        </figcaption>
+                      </div>
+                    </figure>
+                  </section>
+                </div>
+                <h2 class="title-font mt-5 text-xl font-medium text-gray-900 motion-safe:transition-colors motion-safe:duration-500 motion-safe:ease-linear dark:text-white">&#x1F3A8; Design</h2>
+                <p class="mt-2 text-base leading-relaxed">I love designing things! I mostly focus on designing beautiful websites (like this one &#x1F609;). <br class="hidden lg:inline-block" />I like to use beautifuly designed software. Looks are everything to me!</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </section>
+    <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from 'https://www.gstatic.com/firebasejs/9.6.11/firebase-app.js'
+      import { getAnalytics } from 'https://www.gstatic.com/firebasejs/9.6.11/firebase-analytics.js'
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      const firebaseConfig = {
+        apiKey: 'AIzaSyAGmgp5bwwsRLBkFoIYXcJJdrHMiHJ2Ccw',
+        authDomain: 'gigi-personal-website.firebaseapp.com',
+        projectId: 'gigi-personal-website',
+        storageBucket: 'gigi-personal-website.appspot.com',
+        messagingSenderId: '700973662664',
+        appId: '1:700973662664:web:f0d8838ccf1a64b526c0fd',
+        measurementId: 'G-RL109SK5BL',
+      }
+
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig)
+      const analytics = getAnalytics(app)
+    </script>
+  </body>
+</html>
