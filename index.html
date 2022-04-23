@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html id="parent" class="dark" lang="en">
+<html id="parent" class="" lang="en">
   <head>
     <!-- Default meta tags -->
     <meta charset="UTF-8" />
@@ -7,9 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Linking of external files like css and js -->
-    <link rel="stylesheet" href="./assets/css/master.css" />
-    <script src="./assets/scripts/important.js" importance="high"></script>
-    <script src="./assets/scripts/javascript.js" defer></script>
+    <link rel="stylesheet" href="/assets/css/master.css" />
+    <script src="/assets/scripts/important.js" importance="high"></script>
+    <script src="/assets/scripts/javascript.js" defer></script>
 
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/favicons/apple-touch-icon.png" />
@@ -63,17 +63,25 @@
     <meta property="twitter:image" content="/assets/images/png/Thumbnail.png" />
     <meta property="twitter:site" content="@iDarthGigi" />
     <meta property="twitter:creator" content="@iDarthGigi" />
+
+    <script>
+      if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        document.getElementById('parent').classList.add('dark')
+      } else {
+        document.getElementById('parent').classList.remove('dark')
+      }
+    </script>
   </head>
 
   <body class="bg-gray-200 motion-safe:transition-colors motion-safe:duration-500 motion-safe:ease-linear dark:bg-gray-900">
-    <header id="desktopHeader" class="sticky -top-1 z-10 mx-auto px-4 backdrop-blur-sm motion-safe:transition-all motion-safe:duration-500 motion-safe:ease-in-out lg:px-8">
+    <header id="desktopHeader" class="sticky -top-0 z-10 mx-auto px-4 backdrop-blur-sm motion-safe:transition-all motion-safe:duration-500 motion-safe:ease-in-out lg:px-8">
       <div id="desktopHeaderDiv" class="mb-4 flex items-center justify-between rounded-lg py-4 px-4 motion-safe:transition-colors motion-safe:duration-500 motion-safe:ease-linear">
         <!-- logo - start -->
         <div id="rollImg" class="relative z-10 inline-flex cursor-default items-center gap-2.5 motion-safe:transition-all motion-safe:duration-1000">
           <picture onmouseenter="rollAnimation()">
-            <source srcset="./assets/images/webp/GigiMac.webp" type="image/webp" />
-            <source srcset="./assets/images/png/GigiMac.png" type="image/png" />
-            <img id="rollImg2" src="./assets/images/png/GigiMac.png" alt="Profile Picture Mac" importance="high" class="drag-none pointer-events-none h-auto w-16 select-none rounded-full" />
+            <source srcset="/assets/images/webp/GigiMac.webp" type="image/webp" />
+            <source srcset="/assets/images/png/GigiMac.png" type="image/png" />
+            <img id="rollImg2" src="/assets/images/png/GigiMac.png" alt="Profile Picture Mac" importance="high" class="drag-none pointer-events-none h-auto w-16 select-none rounded-full" />
           </picture>
         </div>
         <div id="walter" class="absolute z-0 cursor-default items-center gap-2.5 opacity-0 motion-safe:transition-all motion-safe:duration-1000">
@@ -92,7 +100,7 @@
               <p class="text-base font-semibold text-blue-500 group-hover:text-blue-500 group-active:text-blue-700">Home</p>
             </div>
           </a>
-          <a href="/" class="group rounded-lg p-2 hover:bg-gray-300 motion-safe:transition-all motion-safe:duration-300 motion-safe:ease-linear dark:hover:bg-gray-700 lg:hover:scale-110">
+          <a href="about/" class="group rounded-lg p-2 hover:bg-gray-300 motion-safe:transition-all motion-safe:duration-300 motion-safe:ease-linear dark:hover:bg-gray-700 lg:hover:scale-110">
             <div class="flex flex-col">
               <p class="flex justify-center text-3xl">&#x1F6A7;</p>
               <p class="text-base font-semibold text-gray-600 group-hover:text-blue-500 group-active:text-blue-700">Soon&#8482;</p>
@@ -122,46 +130,46 @@
           </svg>
         </button>
       </div>
-    </header>
-    <header id="mobileHeader" class="sticky -top-1 z-10 mx-auto hidden px-4 backdrop-blur-sm motion-safe:transition-all motion-safe:duration-500 motion-safe:ease-in-out lg:hidden">
-      <div id="mobileHeaderDiv" class="flex max-w-screen-lg flex-1 items-center rounded-lg motion-safe:transition-colors motion-safe:duration-500 motion-safe:ease-linear">
-        <!-- nav - start -->
-        <nav class="flex flex-grow px-4">
-          <a href="/" class="group m-auto rounded-lg p-2 px-4 hover:bg-gray-300 motion-safe:transition-all motion-safe:duration-300 motion-safe:ease-linear dark:hover:bg-gray-700 lg:hover:scale-110">
-            <div class="flex flex-col">
-              <p class="flex justify-center text-3xl">&#x1F3E0;</p>
-              <p class="text-base font-semibold text-blue-500 group-hover:text-blue-500 group-active:text-blue-700">Home</p>
-            </div>
-          </a>
-          <a href="/" class="group m-auto rounded-lg p-2 px-4 hover:bg-gray-300 motion-safe:transition-all motion-safe:duration-300 motion-safe:ease-linear dark:hover:bg-gray-700 lg:hover:scale-110">
-            <div class="flex flex-col">
-              <p class="flex justify-center text-3xl">&#x1F6A7;</p>
-              <p class="text-base font-semibold text-gray-600 group-hover:text-blue-500 group-active:text-blue-700">Soon&#8482;</p>
-            </div>
-          </a>
-          <a href="/" class="group m-auto rounded-lg p-2 px-4 hover:bg-gray-300 motion-safe:transition-all motion-safe:duration-300 motion-safe:ease-linear dark:hover:bg-gray-700 lg:hover:scale-110">
-            <div class="flex flex-col">
-              <p class="flex justify-center text-3xl">&#x1F6A7;</p>
-              <p class="text-base font-semibold text-gray-600 group-hover:text-blue-500 group-active:text-blue-700">Soon&#8482;</p>
-            </div>
-          </a>
-          <a href="/" class="group m-auto rounded-lg p-2 px-4 hover:bg-gray-300 motion-safe:transition-all motion-safe:duration-300 motion-safe:ease-linear dark:hover:bg-gray-700 lg:hover:scale-110">
-            <div class="flex flex-col">
-              <p class="flex justify-center text-3xl">&#x1F6A7;</p>
-              <p class="text-base font-semibold text-gray-600 group-hover:text-blue-500 group-active:text-blue-700">Soon&#8482;</p>
-            </div>
-          </a>
-        </nav>
-      </div>
+      <header id="mobileHeader" class="sticky -top-0 z-10 mx-auto hidden pt-0 backdrop-blur-sm motion-safe:transition-all motion-safe:duration-500 motion-safe:ease-in-out lg:hidden">
+        <div id="mobileHeaderDiv" class="flex max-w-screen-lg flex-1 items-center rounded-lg motion-safe:transition-colors motion-safe:duration-500 motion-safe:ease-linear">
+          <!-- nav - start -->
+          <nav class="flex flex-grow px-4">
+            <a href="/" class="group m-auto rounded-lg p-2 px-4 hover:bg-gray-300 motion-safe:transition-all motion-safe:duration-300 motion-safe:ease-linear dark:hover:bg-gray-700 lg:hover:scale-110">
+              <div class="flex flex-col">
+                <p class="flex justify-center text-3xl">&#x1F3E0;</p>
+                <p class="text-base font-semibold text-blue-500 group-hover:text-blue-500 group-active:text-blue-700">Home</p>
+              </div>
+            </a>
+            <a href="/" class="group m-auto rounded-lg p-2 px-4 hover:bg-gray-300 motion-safe:transition-all motion-safe:duration-300 motion-safe:ease-linear dark:hover:bg-gray-700 lg:hover:scale-110">
+              <div class="flex flex-col">
+                <p class="flex justify-center text-3xl">&#x1F6A7;</p>
+                <p class="text-base font-semibold text-gray-600 group-hover:text-blue-500 group-active:text-blue-700">Soon&#8482;</p>
+              </div>
+            </a>
+            <a href="/" class="group m-auto rounded-lg p-2 px-4 hover:bg-gray-300 motion-safe:transition-all motion-safe:duration-300 motion-safe:ease-linear dark:hover:bg-gray-700 lg:hover:scale-110">
+              <div class="flex flex-col">
+                <p class="flex justify-center text-3xl">&#x1F6A7;</p>
+                <p class="text-base font-semibold text-gray-600 group-hover:text-blue-500 group-active:text-blue-700">Soon&#8482;</p>
+              </div>
+            </a>
+            <a href="/" class="group m-auto rounded-lg p-2 px-4 hover:bg-gray-300 motion-safe:transition-all motion-safe:duration-300 motion-safe:ease-linear dark:hover:bg-gray-700 lg:hover:scale-110">
+              <div class="flex flex-col">
+                <p class="flex justify-center text-3xl">&#x1F6A7;</p>
+                <p class="text-base font-semibold text-gray-600 group-hover:text-blue-500 group-active:text-blue-700">Soon&#8482;</p>
+              </div>
+            </a>
+          </nav>
+        </div>
+      </header>
     </header>
 
     <section id="section1" class="body-font z-0 h-screen text-gray-600 motion-safe:transition-colors motion-safe:duration-500 motion-safe:ease-linear dark:text-gray-400">
       <div class="container mx-auto flex flex-col items-center px-5 py-24 lg:flex-row">
         <div class="mb-10 w-5/6 md:w-1/2 lg:mb-0 xl:w-full xl:max-w-xl">
           <picture>
-            <source srcset="./assets/images/webp/Gigi3.webp" type="image/webp" />
-            <source srcset="./assets/images/png/Gigi3.png" type="image/png" />
-            <img importance="high" class="drag-none pointer-events-none select-none rounded-2xl object-cover object-center" alt="Gigi Hello Memoji" src="./assets/images/png/Gigi3.png" />
+            <source srcset="/assets/images/webp/Gigi3.webp" type="image/webp" />
+            <source srcset="/assets/images/png/Gigi3.png" type="image/png" />
+            <img importance="high" class="drag-none pointer-events-none select-none rounded-2xl object-cover object-center" alt="Gigi Hello Memoji" src="/assets/images/png/Gigi3.png" />
           </picture>
         </div>
         <div class="flex flex-col items-center text-center md:pl-16 lg:w-1/2 lg:flex-grow lg:items-start lg:pl-24 lg:text-left">
@@ -174,7 +182,7 @@
       </div>
     </section>
 
-    <section id="intro" class="pb-6 sm:pb-8 lg:pb-12">
+    <section id="intro" class="scroll-m-12 pb-6 sm:pb-8 lg:pb-12">
       <div class="mx-auto px-4 lg:px-8">
         <section class="body-font text-gray-600 motion-safe:transition-colors motion-safe:duration-500 motion-safe:ease-linear dark:text-gray-400">
           <div class="container mx-auto px-5 py-24">
@@ -189,12 +197,15 @@
             </div>
             <div class="-mx-4 -mb-10 -mt-4 flex flex-wrap sm:-m-4">
               <div class="p-4 lg:w-1/2 xl:w-2/4">
-                <div id="togglePause1" class="h-64 overflow-hidden rounded-lg">
-                  <video id="coding" loop playsinline disablepictureinpicture poster="./assets/images/jpg/coding_thumbnail.jpg" muted class="h-full w-full rounded-lg object-cover object-center active:!pointer-events-none">
-                    <source src="./assets/videos/webm/coding.webm" type="video/webm" />
-                    <source src="./assets/videos/mp4/coding.mp4" type="video/mp4" />
-                    Your browser does not support the video tag.
-                  </video>
+                <div class="group relative h-64 overflow-hidden rounded-lg">
+                  <div id="togglePause1" class="h-64 overflow-hidden rounded-lg">
+                    <video id="coding" loop playsinline disablepictureinpicture poster="/assets/images/jpg/coding_thumbnail.jpg" muted class="h-full w-full rounded-lg object-cover object-center active:!pointer-events-none">
+                      <source src="/assets/videos/webm/coding.webm" type="video/webm" />
+                      <source src="/assets/videos/mp4/coding.mp4" type="video/mp4" />
+                      Your browser does not support the video tag.
+                    </video>
+                  </div>
+                  <button id="togglePauseCoding" class="absolute bottom-0 left-3 transform text-white opacity-0 delay-500 group-hover:-translate-y-3 group-hover:opacity-100 group-active:opacity-100 motion-safe:transition-all motion-safe:duration-500"></button>
                 </div>
                 <h2 class="title-font mt-5 text-xl font-medium text-gray-900 motion-safe:transition-colors motion-safe:duration-500 motion-safe:ease-linear dark:text-white">&#x1F468;&#127995;&#x200D;&#x1F4BB; Coding</h2>
                 <p class="mt-2 text-base leading-relaxed">
@@ -205,13 +216,14 @@
               <div class="p-4 lg:w-1/2 xl:w-2/4">
                 <div class="group relative h-64 overflow-hidden rounded-lg">
                   <div id="togglePause2" class="h-full w-full">
-                    <video id="lettherebelife" loop playsinline disablepictureinpicture poster="./assets/images/jpg/lettherebelife_thumbnail.jpg" muted class="h-full w-full rounded-lg object-cover object-center active:!pointer-events-none">
-                      <source src="./assets/videos/webm/lettherebelife.webm" type="video/webm" />
-                      <source src="./assets/videos/mp4/lettherebelife.mp4" type="video/mp4" />
+                    <video id="lettherebelife" loop playsinline disablepictureinpicture poster="/assets/images/jpg/lettherebelife_thumbnail.jpg" muted class="h-full w-full rounded-lg object-cover object-center active:!pointer-events-none">
+                      <source src="/assets/videos/webm/lettherebelife.webm" type="video/webm" />
+                      <source src="/assets/videos/mp4/lettherebelife.mp4" type="video/mp4" />
                       Your browser does not support the video tag.
                     </video>
                   </div>
-                  <button id="toggleMuteSpace" class="motion-safe:transition-color absolute bottom-3 right-3 z-10 opacity-0 delay-500 group-hover:opacity-100 motion-safe:duration-500">
+                  <button id="togglePauseSpace" class="absolute bottom-0 left-3 z-10 transform text-white opacity-0 delay-500 group-hover:-translate-y-3 group-hover:opacity-100 motion-safe:transition-all motion-safe:duration-500"></button>
+                  <button id="toggleMuteSpace" class="absolute bottom-0 right-3 z-10 transform text-white opacity-0 delay-500 group-hover:-translate-y-3 group-hover:opacity-100 motion-safe:transition-all motion-safe:duration-500">
                     <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z" clip-rule="evenodd"></path>
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2"></path>
@@ -227,13 +239,14 @@
               <div class="p-4 lg:w-1/2 xl:w-2/4">
                 <div class="group relative h-64 overflow-hidden rounded-lg">
                   <div id="togglePause3" class="h-full w-full">
-                    <video id="wonderfultools" loop playsinline disablepictureinpicture poster="./assets/images/jpg/wonderfultools_thumbnail.jpg" muted class="h-full w-full rounded-lg object-cover object-center active:!pointer-events-none">
-                      <source src="./assets/videos/webm/wonderfultools.webm" type="video/webm" />
-                      <source src="./assets/videos/mp4/wonderfultools.mp4" type="video/mp4" />
+                    <video id="wonderfultools" loop playsinline disablepictureinpicture poster="/assets/images/jpg/wonderfultools_thumbnail.jpg" muted class="h-full w-full rounded-lg object-cover object-center active:!pointer-events-none">
+                      <source src="/assets/videos/webm/wonderfultools.webm" type="video/webm" />
+                      <source src="/assets/videos/mp4/wonderfultools.mp4" type="video/mp4" />
                       Your browser does not support the video tag.
                     </video>
                   </div>
-                  <button id="toggleMuteTechnology" class="absolute bottom-3 right-3 text-black opacity-0 delay-500 group-hover:opacity-100 motion-safe:transition-opacity motion-safe:duration-500">
+                  <button id="togglePauseTechnology" class="absolute bottom-0 left-3 transform text-black opacity-0 delay-500 group-hover:-translate-y-3 group-hover:opacity-100 group-active:opacity-100 motion-safe:transition-all motion-safe:duration-500"></button>
+                  <button id="toggleMuteTechnology" class="absolute bottom-0 right-3 transform text-black opacity-0 delay-500 group-hover:-translate-y-3 group-hover:opacity-100 group-active:opacity-100 motion-safe:transition-all motion-safe:duration-500">
                     <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z" clip-rule="evenodd"></path>
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2"></path>
@@ -252,9 +265,9 @@
                     <figure class="h-full lg:flex lg:p-0">
                       <div class="relative mx-auto h-32 w-32 flex-none rounded-full lg:h-auto lg:w-48 lg:rounded-none lg:rounded-l-xl">
                         <picture>
-                          <source srcset="./assets/images/webp/stevejobs.webp" type="image/webp" />
+                          <source srcset="/assets/images/webp/stevejobs.webp" type="image/webp" />
                           <source srcset="/assets/images/jpg/stevejobs.jpg" type="image/jpeg" />
-                          <img importance="low" class="drag-none pointer-events-none relative mx-auto h-full w-full flex-none select-none rounded-full object-cover lg:rounded-none lg:rounded-l-xl" src="./assets/images/jpg/stevejobs.jpg" alt="Steve Jobs Portrait" />
+                          <img importance="low" class="drag-none pointer-events-none relative mx-auto h-full w-full flex-none select-none rounded-full object-cover lg:rounded-none lg:rounded-l-xl" src="/assets/images/jpg/stevejobs.jpg" alt="Steve Jobs Portrait" />
                         </picture>
                       </div>
                       <div class="space-y-4 p-4 text-center lg:p-6 lg:pt-6 lg:text-left">

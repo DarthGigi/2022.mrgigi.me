@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html id="parent" class="" lang="en">
+  <head>
+    <!-- Default meta tags -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Linking of external files like css and js -->
+    <link rel="stylesheet" href="/assets/css/master.css" />
+    <script src="/assets/scripts/important.js" importance="high"></script>
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/favicons/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicons/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicons/favicon-16x16.png" />
+    <link rel="manifest" href="/assets/images/favicons/site.webmanifest" />
+    <link rel="mask-icon" href="/assets/images/favicons/safari-pinned-tab.svg" color="#5bbad5" />
+    <link rel="shortcut icon" href="/assets/images/favicons/favicon.ico" />
+    <meta name="msapplication-TileColor" content="#2b5797" />
+    <meta name="msapplication-config" content="/assets/images/favicons/browserconfig.xml" />
+    <meta name="theme-color" content="#e5e7eb" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#111827" media="(prefers-color-scheme: dark)" />
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-RL109SK5BL"></script>
+    <script>
+      /**
+       * The function `gtag()` is called with the arguments `'js', new Date()` and `'config', 'G-RL109SK5BL'`
+       */
+      window.dataLayer = window.dataLayer || []
+
+      function gtag() {
+        dataLayer.push(arguments)
+      }
+      gtag('js', new Date())
+
+      gtag('config', 'G-RL109SK5BL')
+    </script>
+
+    <!-- Primary Meta Tags -->
+    <title>&#x1F6D1; 404 &#x1F6D1;</title>
+    <meta name="title" content="Gigi's Useless Website — A useless website that you don't care about" />
+    <meta name="description" content="This is my personal (portfolio) website. Made with Tailwind CSS. If you are interested, the website is open-sourced on my GitHub repository." />
+    <meta name="author" content="Gigi" />
+    <meta name="robots" content="index, follow" />
+    <meta name="language" content="English" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://mrgigi.me/" />
+    <meta property="og:title" content="Gigi's Useless Website — A useless website that you don't care about" />
+    <meta property="og:description" content="This is my personal (portfolio) website. Made with Tailwind CSS. If you are interested, the website is open-sourced on my GitHub repository." />
+    <meta property="og:image" content="/assets/images/png/Thumbnail.png" />
+    <meta property="og:site_name" content="Gigi's Useless Website" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://mrgigi.me/" />
+    <meta property="twitter:title" content="Gigi's Useless Website — A useless website that you don't care about" />
+    <meta property="twitter:description" content="This is my personal (portfolio) website. Made with Tailwind CSS. If you are interested, the website is open-sourced on my GitHub repository." />
+    <meta property="twitter:image" content="/assets/images/png/Thumbnail.png" />
+    <meta property="twitter:site" content="@iDarthGigi" />
+    <meta property="twitter:creator" content="@iDarthGigi" />
+
+    <script>
+      if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        document.getElementById('parent').classList.add('dark')
+      } else {
+        document.getElementById('parent').classList.remove('dark')
+      }
+    </script>
+  </head>
+
+  <body class="bg-gray-200 align-middle motion-safe:transition-colors motion-safe:duration-500 motion-safe:ease-linear dark:bg-gray-900">
+    <section id="easter-section" class="body-font h-screen items-center text-center text-gray-600 motion-safe:transition-colors motion-safe:duration-500 motion-safe:ease-linear dark:text-gray-400">
+      <div class="container m-auto flex flex-col items-center justify-center py-24 px-5 lg:flex-row">
+        <div id="easter-face" class="mb-10 w-5/6 md:w-1/2 lg:mb-0 xl:w-9/12 xl:max-w-xl">
+          <img importance="high" class="drag-none pointer-events-none select-none rounded-2xl" alt="Gigi Shrug Memoji" src="/assets/images/png/Gigi38.png" />
+        </div>
+        <div class="flex flex-col items-center text-center md:pl-16 lg:w-1/2 lg:flex-grow lg:items-start lg:pl-24 lg:text-left">
+          <h1 id="easter-title" class="title-font mb-4 text-3xl font-medium text-gray-900 motion-safe:transition-colors motion-safe:duration-500 motion-safe:ease-linear dark:text-white sm:text-4xl">404</h1>
+          <p id="easter-text" class="mb-8 leading-relaxed">&#x1F6D1; Woah there! &#x1F6D1;<br />It seems like you found my secret home: A page that doesn't exist!</p>
+          <p id="lore" class="text-xl text-black dark:text-white">Anyways... I'll see you later I guess?</p>
+          <div id="easter-button" class="flex justify-center">
+            <button class="inline-flex rounded border-0 bg-blue-500 py-2 px-6 text-lg text-white hover:bg-blue-600 focus:outline-none"><span class="motion- mr-1 inline-block">&#x1F3E0;</span> Go back home <span class="inline-block origin-[70%_70%] motion-safe:animate-wiggle">&#x1F44B;</span></button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from 'https://www.gstatic.com/firebasejs/9.6.11/firebase-app.js'
+      import { getAnalytics } from 'https://www.gstatic.com/firebasejs/9.6.11/firebase-analytics.js'
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      const firebaseConfig = {
+        apiKey: 'AIzaSyAGmgp5bwwsRLBkFoIYXcJJdrHMiHJ2Ccw',
+        authDomain: 'gigi-personal-website.firebaseapp.com',
+        projectId: 'gigi-personal-website',
+        storageBucket: 'gigi-personal-website.appspot.com',
+        messagingSenderId: '700973662664',
+        appId: '1:700973662664:web:f0d8838ccf1a64b526c0fd',
+        measurementId: 'G-RL109SK5BL',
+      }
+
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig)
+      const analytics = getAnalytics(app)
+    </script>
+    <script src="/assets/scripts/eastereggs.js" defer></script>
+  </body>
+</html>
