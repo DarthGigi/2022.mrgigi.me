@@ -23,7 +23,7 @@ setTimeout(() => {
 setTimeout(() => {
     document.getElementById('easter-section').classList.add('animate-spin');
 }, 40000);
-setTimeout((t) => {
+setTimeout(() => {
     document.getElementById('easter-section').classList.remove('animate-spin');
     lore.innerHTML = "You didn't like that one, did you?";
 }, 45000);

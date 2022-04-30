@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html id="parent" class="" lang="en">
+<html id="parent" class="h-full" lang="en">
   <head>
     <!-- Default meta tags -->
     <meta charset="UTF-8" />
@@ -72,22 +72,31 @@
     </script>
   </head>
 
-  <body class="bg-gray-200 align-middle motion-safe:transition-colors motion-safe:duration-500 motion-safe:ease-linear dark:bg-gray-900">
-    <section id="easter-section" class="body-font h-screen items-center text-center text-gray-600 motion-safe:transition-colors motion-safe:duration-500 motion-safe:ease-linear dark:text-gray-400">
-      <div class="container m-auto flex flex-col items-center justify-center py-24 px-5 lg:flex-row">
-        <div id="easter-face" class="mb-10 w-5/6 md:w-1/2 lg:mb-0 xl:w-9/12 xl:max-w-xl">
-          <img importance="high" class="drag-none pointer-events-none select-none rounded-2xl" alt="Gigi Shrug Memoji" src="/assets/images/png/Gigi38.png" />
-        </div>
-        <div class="flex flex-col items-center text-center md:pl-16 lg:w-1/2 lg:flex-grow lg:items-start lg:pl-24 lg:text-left">
-          <h1 id="easter-title" class="title-font mb-4 text-3xl font-medium text-gray-900 motion-safe:transition-colors motion-safe:duration-500 motion-safe:ease-linear dark:text-white sm:text-4xl">404</h1>
-          <p id="easter-text" class="mb-8 leading-relaxed">&#x1F6D1; Woah there! &#x1F6D1;<br />It seems like you found my secret home: A page that doesn't exist!</p>
-          <p id="lore" class="text-xl text-black dark:text-white">Anyways... I'll see you later I guess?</p>
-          <div id="easter-button" class="flex justify-center">
-            <button class="inline-flex rounded border-0 bg-blue-500 py-2 px-6 text-lg text-white hover:bg-blue-600 focus:outline-none"><span class="motion- mr-1 inline-block">&#x1F3E0;</span> Go back home <span class="inline-block origin-[70%_70%] motion-safe:animate-wiggle">&#x1F44B;</span></button>
+  <body class="h-full bg-gray-200 align-middle motion-safe:transition-colors motion-safe:duration-500 motion-safe:ease-linear dark:bg-gray-900">
+    <div class="flex min-h-full flex-col pt-16 pb-12">
+      <main class="mx-auto flex w-full max-w-7xl flex-grow flex-col justify-center px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-shrink-0 justify-center">
+          <div class="inline-flex">
+            <picture>
+              <source srcset="/assets/images/webp/Gigi38.webp" type="image/webp" />
+              <source srcset="/assets/images/png/Gigi38.png" type="image/png" />
+              <img class="drag-none pointer-events-none h-auto w-48 select-none" src="/assets/images/png/Gigi38.png" alt="Logo" />
+            </picture>
           </div>
         </div>
-      </div>
-    </section>
+        <div class="py-16">
+          <div class="text-center">
+            <p class="text-sm font-semibold uppercase tracking-wide text-blue-600 dark:text-blue-500">404 Error</p>
+            <h1 class="mt-2 text-4xl font-extrabold tracking-tight text-gray-600 dark:text-white sm:text-5xl">This page doesn't exist</h1>
+            <p class="mt-2 text-base text-gray-500">Hmm... It seems like you got lost &#x1F914;</p>
+            <div class="mt-6">
+              <a href="/" class="inline-flex items-center rounded-md border border-transparent bg-blue-600 px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">Go back home &#x1F3E0;</a>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
     <script type="module">
       // Import the functions you need from the SDKs you need
       import { initializeApp } from 'https://www.gstatic.com/firebasejs/9.6.11/firebase-app.js'
@@ -111,6 +120,5 @@
       const app = initializeApp(firebaseConfig)
       const analytics = getAnalytics(app)
     </script>
-    <script src="/assets/scripts/eastereggs.js" defer></script>
   </body>
 </html>
