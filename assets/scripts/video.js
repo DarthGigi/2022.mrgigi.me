@@ -29,12 +29,8 @@ videos.forEach((video) => {
             (entries) => {
                 entries.forEach((entry) => {
                     if (entry.isIntersecting) {
-                        video.defaultMuted = true
-                        video.muted = true
                         video.play()
                     } else {
-                        video.defaultMuted = true
-                        video.muted = true
                         video.pause()
                     }
                 })
