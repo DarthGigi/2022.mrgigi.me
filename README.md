@@ -31,6 +31,7 @@ JavaScript, HTML and Tailwind CSS
 
     -   [![Tailwind CSS](https://img.shields.io/static/v1?label=&message=Tailwind+CSS&color=111827&style=for-the-badge&logo=Tailwind+CSS)](https://tailwindcss.com/)
     -   [![Prettier](https://img.shields.io/static/v1?label=&message=Prettier&color=111827&style=for-the-badge&logo=Prettier)](https://prettier.io/)
+    -   [![Vercel](https://img.shields.io/static/v1?label=&message=Vercel&color=111827&style=for-the-badge&logo=Vercel)](https://vercel.com/)
 
 -   ### 🤝 Contact
     -   [![Portfolio](https://img.shields.io/static/v1?label=&message=My+Portfolio&color=%23111827&style=for-the-badge&logo=ko-fi)](https://mrgigi.me/)
