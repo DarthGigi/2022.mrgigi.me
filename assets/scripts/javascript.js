@@ -47,15 +47,15 @@ function scrollIntro() {
 /* Adding an event listener to the DOMContentLoaded event. When the DOMContentLoaded event is fired, it
 will set a timeout of 1 second and then display an alert. */
 // only alert on the domain mrgigi.me
-if (window.location.hostname === 'mrgigi.me') {
-    document.addEventListener('DOMContentLoaded', () => {
-        setTimeout(() => {
-            alert(
-                '👋🏻 Thanks for visiting my website! Please note that the website is still under development and far from finished.'
-            )
-        }, 1000)
-    })
-}
+// if (window.location.hostname === 'mrgigi.me') {
+//     document.addEventListener('DOMContentLoaded', () => {
+//         setTimeout(() => {
+//             alert(
+//                 '👋🏻 Thanks for visiting my website! Please note that the website is still under development and far from finished.'
+//             )
+//         }, 1000)
+//     })
+// }
 
 // rollAnimation
 /**
