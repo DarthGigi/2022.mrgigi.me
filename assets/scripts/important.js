@@ -8,11 +8,3 @@ document.addEventListener('DOMContentLoaded', function (event) {
 window.onbeforeunload = function (e) {
     localStorage.setItem('scrollpos', window.scrollY)
 }
-
-/* This is a redirect to my custom domain. */
-if (
-    window.location.hostname == 'gigi-personal-website.web.app' ||
-    window.location.hostname == 'gigi-personal-website.firebaseapp.com'
-) {
-    window.location.href = 'https://mrgigi.me'
-}
