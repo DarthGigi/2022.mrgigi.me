@@ -1,9 +1,5 @@
 ### Manual ###
-src
 package-lock.json
-package.json
-tailwind.config.js
-.prettier*
 
 ### Git ###
 # Created by git for backups. To disable backups in Git:
