@@ -23,22 +23,6 @@
     <meta name="theme-color" content="#e5e7eb" media="(prefers-color-scheme: light)" />
     <meta name="theme-color" content="#111827" media="(prefers-color-scheme: dark)" />
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-RL109SK5BL"></script>
-    <script>
-      /**
-       * The function `gtag()` is called with the arguments `'js', new Date()` and `'config', 'G-RL109SK5BL'`
-       */
-      window.dataLayer = window.dataLayer || []
-
-      function gtag() {
-        dataLayer.push(arguments)
-      }
-      gtag('js', new Date())
-
-      gtag('config', 'G-RL109SK5BL')
-    </script>
-
     <!-- Primary Meta Tags -->
     <title>Gigi's Useless Website — A useless website that you don't care about</title>
     <meta name="title" content="Gigi's Useless Website — A useless website that you don't care about" />
@@ -63,14 +47,6 @@
     <meta property="twitter:image" content="/assets/images/png/Thumbnail.png" />
     <meta property="twitter:site" content="@iDarthGigi" />
     <meta property="twitter:creator" content="@iDarthGigi" />
-
-    <script>
-      if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-        document.getElementById('parent').classList.add('dark')
-      } else {
-        document.getElementById('parent').classList.remove('dark')
-      }
-    </script>
   </head>
 
   <body class="bg-gray-200 motion-safe:transition-colors motion-safe:duration-500 motion-safe:ease-linear dark:bg-gray-900">
@@ -169,7 +145,10 @@
       <div class="container mx-auto flex px-5 py-24">
         <div class="relative mt-10 flex w-full flex-col rounded-lg bg-white p-8 shadow-md motion-safe:transition-colors motion-safe:duration-500 motion-safe:ease-linear dark:bg-gray-900 md:ml-auto md:mt-0 md:w-1/2 lg:w-1/3">
           <h2 class="title-font mb-1 text-lg font-medium text-gray-900 motion-safe:transition-colors motion-safe:duration-500 motion-safe:ease-linear dark:text-white">Contact Me!</h2>
-          <p class="mb-5 leading-relaxed text-gray-600 motion-safe:transition-colors motion-safe:duration-500 motion-safe:ease-linear dark:text-gray-400"><span class="motion-safe:transition-colors motion-safe:duration-500 motion-safe:ease-linear line-through">The best way to contact me is via e-mail:</span> <br> <span class="motion-safe:transition-colors motion-safe:duration-500 motion-safe:ease-linear dark:text-red-300 text-red-400">The form has been disabled due to spam</span></p>
+          <p class="mb-5 leading-relaxed text-gray-600 motion-safe:transition-colors motion-safe:duration-500 motion-safe:ease-linear dark:text-gray-400">
+            <span class="line-through motion-safe:transition-colors motion-safe:duration-500 motion-safe:ease-linear">The best way to contact me is via e-mail:</span> <br />
+            <span class="text-red-400 motion-safe:transition-colors motion-safe:duration-500 motion-safe:ease-linear dark:text-red-300">The form has been disabled due to spam</span>
+          </p>
           <form action="" class="pageclip-form" method="post">
             <div class="relative mb-4">
               <label for="email" class="text-sm leading-7 text-gray-300 motion-safe:transition-colors motion-safe:duration-500 motion-safe:ease-linear dark:text-gray-700">Email</label>
@@ -183,7 +162,7 @@
               <label for="message" class="text-sm leading-7 text-gray-300 motion-safe:transition-colors motion-safe:duration-500 motion-safe:ease-linear dark:text-gray-700">Message</label>
               <textarea disabled required id="message" name="body" class="h-32 w-full resize-none rounded border border-gray-300 bg-white py-1 px-3 text-base leading-6 text-gray-700 outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-200 motion-safe:transition-colors motion-safe:duration-500 motion-safe:ease-linear dark:border-gray-700 dark:bg-gray-800 dark:text-gray-100 dark:focus:border-blue-500 dark:focus:ring-blue-900"></textarea>
             </div>
-            <button disabled type="submit" class="rounded border-0 dark:bg-gray-800 bg-gray-200 text-gray-300 py-2 px-6 text-lg dark:text-gray-700 focus:outline-none motion-safe:transition-colors motion-safe:duration-500 motion-safe:ease-linear"><span>Send</span></button>
+            <button disabled type="submit" class="rounded border-0 bg-gray-200 py-2 px-6 text-lg text-gray-300 focus:outline-none motion-safe:transition-colors motion-safe:duration-500 motion-safe:ease-linear dark:bg-gray-800 dark:text-gray-700"><span>Send</span></button>
           </form>
           <p onclick="scrollIntro()" class="mt-3 cursor-pointer text-xs text-blue-700 text-opacity-90 underline underline-offset-1 motion-safe:transition-colors motion-safe:duration-500 motion-safe:ease-linear dark:text-blue-400">Or check out other ways you can contact me</p>
         </div>

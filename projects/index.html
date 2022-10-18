@@ -23,22 +23,6 @@
     <meta name="theme-color" content="#e5e7eb" media="(prefers-color-scheme: light)" />
     <meta name="theme-color" content="#111827" media="(prefers-color-scheme: dark)" />
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-RL109SK5BL"></script>
-    <script>
-      /**
-       * The function `gtag()` is called with the arguments `'js', new Date()` and `'config', 'G-RL109SK5BL'`
-       */
-      window.dataLayer = window.dataLayer || []
-
-      function gtag() {
-        dataLayer.push(arguments)
-      }
-      gtag('js', new Date())
-
-      gtag('config', 'G-RL109SK5BL')
-    </script>
-
     <!-- Primary Meta Tags -->
     <title>Gigi's Useless Website — A useless website that you don't care about</title>
     <meta name="title" content="Gigi's Useless Website — A useless website that you don't care about" />
@@ -63,14 +47,6 @@
     <meta property="twitter:image" content="/assets/images/png/Thumbnail.png" />
     <meta property="twitter:site" content="@iDarthGigi" />
     <meta property="twitter:creator" content="@iDarthGigi" />
-
-    <script>
-      if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-        document.getElementById('parent').classList.add('dark')
-      } else {
-        document.getElementById('parent').classList.remove('dark')
-      }
-    </script>
   </head>
 
   <body class="bg-gray-200 motion-safe:transition-colors motion-safe:duration-500 motion-safe:ease-linear dark:bg-gray-900">
@@ -180,7 +156,11 @@
             Some turned out pretty good, some didn't. You can see some of them below.
           </p>
           <div class="flex justify-center">
-            <button onclick="scrollIntro()" class="inline-flex rounded border-0 bg-blue-500 py-2 px-6 text-lg text-white hover:bg-blue-600 focus:outline-none"><span class="motion- mr-1 inline-block motion-safe:animate-pulse">&#x1F440;</span>See the things I made!</button>
+            <button onclick="scrollIntro()" class="inline-flex rounded border-0 bg-blue-500 py-2 pl-2 pr-6 text-lg text-white hover:bg-blue-600 focus:outline-none">
+              <span class="mr-1 hidden motion-reduce:inline-block">&#x1F440;</span>
+              <img src="/assets/images/gifs/Eyes.gif" class="mr-1 inline-block h-6 translate-y-[2px] motion-reduce:hidden" />
+              See the things I made!
+            </button>
           </div>
         </div>
       </div>
