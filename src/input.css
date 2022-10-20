@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Apply a color scheme so the scrollbar colors are changed accordingly */
+html {
+  @apply [color-scheme:light] [&.dark]:[color-scheme:dark];
+}
+
+/* For x-cloak to work however, you must add the following CSS */
+[x-cloak] {
+  display: none !important;
+}
