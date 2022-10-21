@@ -1,3 +1,7 @@
+if (location.hostname === "mrgigi-me-idarthgigi.vercel.app" || location.hostname === "mrgigi-me.vercel.app" || location.hostname === "mrgigi-me-git-main-idarthgigi.vercel.app" || location.hostname === "www.mrgigi.me") {
+  location.hostname = "mrgigi.me";
+}
+
 function colorscheme() {
   if (localStorage.theme === "dark" || (!("theme" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
     if (!document.getElementById("parent").classList.contains("dark")) {
