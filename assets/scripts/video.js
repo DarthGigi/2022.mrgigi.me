@@ -22,26 +22,26 @@ togglePauseTech.addEventListener("click", togglePauseTechnology, true);
 /* The code below is using the Intersection Observer API to determine if the video is in the viewport.
 If it is, it will play the video. If it is not, it will pause the video. */
 const videos = document.querySelectorAll("video");
-videos.forEach((video) => {
-  // check if user prefers motion reduced
-  if (!window.matchMedia("(prefers-reduced-motion)").matches) {
-    const intersectionObserver = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            video.play();
-          } else {
-            video.pause();
-          }
-        });
-      },
-      {
-        threshold: 0.01,
-      }
-    );
-    intersectionObserver.observe(video);
-  }
-});
+// videos.forEach((video) => {
+//   // check if user prefers motion reduced
+//   if (!window.matchMedia("(prefers-reduced-motion)").matches) {
+//     const intersectionObserver = new IntersectionObserver(
+//       (entries) => {
+//         entries.forEach((entry) => {
+//           if (entry.isIntersecting) {
+//             video.play();
+//           } else {
+//             video.pause();
+//           }
+//         });
+//       },
+//       {
+//         threshold: 0.01,
+//       }
+//     );
+//     intersectionObserver.observe(video);
+//   }
+// });
 /* The code below is adding an event listener to the videoCode, videoLife, and videoTech variables. The
 event listener is listening for a mouseover event. When the mouseover event occurs, the
 pauseIconCode, pauseIconLife, and pauseIconTech functions are called. */

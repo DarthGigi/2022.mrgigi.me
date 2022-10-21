@@ -1,14 +1,3 @@
-/* Saving the scroll position of the page in local storage and then restoring it when the page is
-reloaded. */
-document.addEventListener("DOMContentLoaded", function (event) {
-  var scrollpos = localStorage.getItem("scrollpos");
-  if (scrollpos) window.scrollTo(0, scrollpos);
-});
-
-window.onbeforeunload = function (e) {
-  localStorage.setItem("scrollpos", window.scrollY);
-};
-
 function colorscheme() {
   if (localStorage.theme === "dark" || (!("theme" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
     if (!document.getElementById("parent").classList.contains("dark")) {
@@ -26,3 +15,44 @@ window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", (e)
 });
 
 colorscheme();
+
+/* Save the scrollposition in sessionstorage on per page basis */
+window.addEventListener("scroll", function () {
+  sessionStorage.setItem(window.location.href + " scrollposition", window.scrollY);
+});
+
+/* Restore the scrollposition on pageload */
+window.addEventListener("load", function () {
+  if (sessionStorage.getItem(window.location.href) !== null) {
+    window.scrollTo(0, sessionStorage.getItem(window.location.href));
+  }
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  var lazyVideos = [].slice.call(document.querySelectorAll("video.lazy"));
+
+  if (!window.matchMedia("(prefers-reduced-motion)").matches) {
+    if ("IntersectionObserver" in window) {
+      var lazyVideoObserver = new IntersectionObserver(function (entries, observer) {
+        entries.forEach(function (video) {
+          if (video.isIntersecting) {
+            for (var source in video.target.children) {
+              var videoSource = video.target.children[source];
+              if (typeof videoSource.tagName === "string" && videoSource.tagName === "SOURCE") {
+                videoSource.src = videoSource.dataset.src;
+              }
+            }
+
+            video.target.load();
+            video.target.classList.remove("lazy");
+            lazyVideoObserver.unobserve(video.target);
+          }
+        });
+      });
+
+      lazyVideos.forEach(function (lazyVideo) {
+        lazyVideoObserver.observe(lazyVideo);
+      });
+    }
+  }
+});
