@@ -8,13 +8,13 @@
 
 ## 📑 Table of Contents
 
--   [👋 Intro](https://github.com/DarthGigi/mrgigi.me/#-a-personal-portfolio-website)
--   [⚙️ Made With](https://github.com/DarthGigi/mrgigi.me/#-hand-crafted-with)
--   [🖇 Links](https://github.com/DarthGigi/mrgigi.me/#-links)
-    -   [🔗 Tools Used](https://github.com/DarthGigi/mrgigi.me/#%EF%B8%8F-tools-used)
-    -   [🔗 Contact](https://github.com/DarthGigi/mrgigi.me/#-contact)
--   [🗣 Feedback](https://github.com/DarthGigi/mrgigi.me/#-feedback)
--   [📄 License](https://github.com/DarthGigi/mrgigi.me/#-license)
+- [👋 Intro](https://github.com/DarthGigi/mrgigi.me/#-a-personal-portfolio-website)
+- [⚙️ Made With](https://github.com/DarthGigi/mrgigi.me/#-hand-crafted-with)
+- [🖇 Links](https://github.com/DarthGigi/mrgigi.me/#-links)
+  - [🔗 Tools Used](https://github.com/DarthGigi/mrgigi.me/#%EF%B8%8F-tools-used)
+  - [🔗 Contact](https://github.com/DarthGigi/mrgigi.me/#-contact)
+- [🗣 Feedback](https://github.com/DarthGigi/mrgigi.me/#-feedback)
+- [📄 License](https://github.com/DarthGigi/mrgigi.me/#-license)
 
 # 👨🏻‍💻 A personal portfolio website
 
@@ -27,16 +27,17 @@ JavaScript, HTML and Tailwind CSS
 
 ## 🔗 Links
 
--   ### ⚒️ Tools Used
+- ### ⚒️ Tools Used
 
-    -   [![Tailwind CSS](https://img.shields.io/static/v1?label=&message=Tailwind+CSS&color=111827&style=for-the-badge&logo=Tailwind+CSS)](https://tailwindcss.com/)
-    -   [![Prettier](https://img.shields.io/static/v1?label=&message=Prettier&color=111827&style=for-the-badge&logo=Prettier)](https://prettier.io/)
-    -   [![Vercel](https://img.shields.io/static/v1?label=&message=Vercel&color=111827&style=for-the-badge&logo=Vercel)](https://vercel.com/)
+  - [![Tailwind CSS](https://img.shields.io/static/v1?label=&message=Tailwind+CSS&color=111827&style=for-the-badge&logo=Tailwind+CSS)](https://tailwindcss.com/)
+  - [![Alpine.js](https://img.shields.io/static/v1?label=&message=Alpine.js&color=111827&style=for-the-badge&logo=Alpine.js)](https://alpinejs.dev/)
+  - [![Prettier](https://img.shields.io/static/v1?label=&message=Prettier&color=111827&style=for-the-badge&logo=Prettier)](https://prettier.io/)
+  - [![Vercel](https://img.shields.io/static/v1?label=&message=Vercel&color=111827&style=for-the-badge&logo=Vercel)](https://vercel.com/)
 
--   ### 🤝 Contact
-    -   [![Portfolio](https://img.shields.io/static/v1?label=&message=My+Portfolio&color=%23111827&style=for-the-badge&logo=ko-fi)](https://mrgigi.me/)
-    -   [![Twitter](https://img.shields.io/static/v1?label=&message=Twitter&color=111827&style=for-the-badge&logo=Twitter)](https://twitter.com/iDarthGigi)
-    -   [![E-Mail](https://img.shields.io/static/v1?label=&message=E-Mail&color=111827&style=for-the-badge&logo=gmail)](mailto:overlap.corrals0d@icloud.com)
+- ### 🤝 Contact
+  - [![Portfolio](https://img.shields.io/static/v1?label=&message=My+Portfolio&color=%23111827&style=for-the-badge&logo=ko-fi)](https://mrgigi.me/)
+  - [![Twitter](https://img.shields.io/static/v1?label=&message=Twitter&color=111827&style=for-the-badge&logo=Twitter)](https://twitter.com/iDarthGigi)
+  - [![E-Mail](https://img.shields.io/static/v1?label=&message=E-Mail&color=111827&style=for-the-badge&logo=gmail)](mailto:overlap.corrals0d@icloud.com)
 
 ## 💬 Feedback
 
