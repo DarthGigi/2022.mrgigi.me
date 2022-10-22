@@ -1,4 +1,11 @@
 User-agent: *
 Allow: /
+Allow: /sitemap.xml
+Allow: /assets/images/embed/
+Disallow: /assets/css/
+Disallow: /assets/scripts/
+Disallow: /assets/videos/
+Disallow: /assets/images/
+Disallow: /src/
 
 Sitemap: https://mrgigi.me/sitemap.xml
