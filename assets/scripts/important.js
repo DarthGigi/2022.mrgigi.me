@@ -60,7 +60,3 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 });
-
-if (navigator.userAgent.match(/Android/i)) {
-  window.location.href = "https://www.apple.com/shop/buy-iphone";
-}
