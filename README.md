@@ -1,20 +1,20 @@
-![Logo](https://raw.githubusercontent.com/DarthGigi/mrgigi.me/main/assets/images/png/Thumbnail.png)<p align=center>
-<img src="https://img.shields.io/github/license/DarthGigi/mrgigi.me?style=for-the-badge" alt="license">
-<img src="https://img.shields.io/github/languages/count/DarthGigi/mrgigi.me?style=for-the-badge" alt="languages">
-<img src="https://img.shields.io/github/languages/top/DarthGigi/mrgigi.me?style=for-the-badge" alt="top language">
-<img src="https://img.shields.io/website?style=for-the-badge&url=https%3A%2F%2Fmrgigi.me" alt="website status">
+![Logo](https://raw.githubusercontent.com/DarthGigi/2022.mrgigi.me/main/assets/images/png/Thumbnail.png)<p align=center>
+<img src="https://img.shields.io/github/license/DarthGigi/2022.mrgigi.me?style=for-the-badge" alt="license">
+<img src="https://img.shields.io/github/languages/count/DarthGigi/2022.mrgigi.me?style=for-the-badge" alt="languages">
+<img src="https://img.shields.io/github/languages/top/DarthGigi/2022.mrgigi.me?style=for-the-badge" alt="top language">
+<img src="https://img.shields.io/website?style=for-the-badge&url=https%3A%2F%2F2022.mrgigi.me" alt="website status">
 
 </p>
 
 ## 📑 Table of Contents
 
-- [👋 Intro](https://github.com/DarthGigi/mrgigi.me/#-a-personal-portfolio-website)
-- [⚙️ Made With](https://github.com/DarthGigi/mrgigi.me/#-hand-crafted-with)
-- [🖇 Links](https://github.com/DarthGigi/mrgigi.me/#-links)
-  - [🔗 Tools Used](https://github.com/DarthGigi/mrgigi.me/#%EF%B8%8F-tools-used)
-  - [🔗 Contact](https://github.com/DarthGigi/mrgigi.me/#-contact)
-- [🗣 Feedback](https://github.com/DarthGigi/mrgigi.me/#-feedback)
-- [📄 License](https://github.com/DarthGigi/mrgigi.me/#-license)
+- [👋 Intro](https://github.com/DarthGigi/2022.mrgigi.me/#-a-personal-portfolio-website)
+- [⚙️ Made With](https://github.com/DarthGigi/2022.mrgigi.me/#-hand-crafted-with)
+- [🖇 Links](https://github.com/DarthGigi/2022.mrgigi.me/#-links)
+  - [🔗 Tools Used](https://github.com/DarthGigi/2022.mrgigi.me/#%EF%B8%8F-tools-used)
+  - [🔗 Contact](https://github.com/DarthGigi/2022.mrgigi.me/#-contact)
+- [🗣 Feedback](https://github.com/DarthGigi/2022.mrgigi.me/#-feedback)
+- [📄 License](https://github.com/DarthGigi/2022.mrgigi.me/#-license)
 
 # 👨🏻‍💻 A personal portfolio website
 
@@ -35,7 +35,7 @@ JavaScript, HTML and Tailwind CSS
   - [![Vercel](https://img.shields.io/static/v1?label=&message=Vercel&color=111827&style=for-the-badge&logo=Vercel)](https://vercel.com/)
 
 - ### 🤝 Contact
-  - [![Portfolio](https://img.shields.io/static/v1?label=&message=My+Portfolio&color=%23111827&style=for-the-badge&logo=ko-fi)](https://mrgigi.me/)
+  - [![Portfolio](https://img.shields.io/static/v1?label=&message=My+Portfolio&color=%23111827&style=for-the-badge&logo=ko-fi)](https://2022.mrgigi.me/)
   - [![Twitter](https://img.shields.io/static/v1?label=&message=Twitter&color=111827&style=for-the-badge&logo=Twitter)](https://twitter.com/iDarthGigi)
   - [![E-Mail](https://img.shields.io/static/v1?label=&message=E-Mail&color=111827&style=for-the-badge&logo=gmail)](mailto:overlap.corrals0d@icloud.com)
 
@@ -45,4 +45,4 @@ If you have any feedback, please reach out to me at overlap.corrals0d@icloud.com
 
 ## 📜 License
 
-[MIT](https://github.com/DarthGigi/mrgigi.me/blob/main/LICENSE)
+[MIT](https://github.com/DarthGigi/2022.mrgigi.me/blob/main/LICENSE)
