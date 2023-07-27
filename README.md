@@ -2,7 +2,7 @@
 <img src="https://img.shields.io/github/license/DarthGigi/2022.mrgigi.me?style=for-the-badge" alt="license">
 <img src="https://img.shields.io/github/languages/count/DarthGigi/2022.mrgigi.me?style=for-the-badge" alt="languages">
 <img src="https://img.shields.io/github/languages/top/DarthGigi/2022.mrgigi.me?style=for-the-badge" alt="top language">
-<img src="https://img.shields.io/website?style=for-the-badge&url=https%3A%2F%2F2022.mrgigi.me" alt="website status">
+<img src="https://img.shields.io/website?style=for-the-badge&url=https%3A%2F%2Fmrgigi.me" alt="website status">
 
 </p>
 
